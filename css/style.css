@@ -1,0 +1,13 @@
+.row {border:1px solid #000 !important;} 
+#header{padding-bottom: 20px; position: fixed; top:0; left:0; width:100%; background: green; z-index: 10000; margin:0;}
+#header h1 {color: #fff;}
+
+#placeholder { height:80px;}
+
+.penis{height: 300px; background: #cdcdcd; width: 100%;border:1px solid #000;}
+.penis2{height: 350px; background: #cdcdcd; width: 100%;border:1px solid #000;}
+.muschi{height: 50px; background: #abef03; width: 100%;}
+
+.nopadding{padding: 0;}
+
+.logo{font-size:3em; color: red;}
