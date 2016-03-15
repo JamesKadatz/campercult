@@ -1,5 +1,12 @@
 .row {border:1px solid #000 !important;} 
-#header{padding-bottom: 20px; position: fixed; top:0; left:0; width:100%; background: green; z-index: 10000; margin:0;}
+#header{padding-bottom: 5px; padding-top: 5px; position: fixed; top:0; left:0; width:100%; z-index: 10000; margin:0;
+	background: #232526; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #232526 , #414345); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #232526 , #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+		}
 #header h1 {color: #fff;}
 
 #placeholder { height:80px;}
@@ -10,4 +17,4 @@
 
 .nopadding{padding: 0;}
 
-.logo{font-size:3em; color: #fff;}
+.logo{font-size:3em; color: red;}
