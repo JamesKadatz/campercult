@@ -1,15 +1,23 @@
-.row {border:1px solid #000 !important;} 
-#header{padding-bottom: 5px; padding-top: 5px; position: fixed; top:0; left:0; width:100%; z-index: 10000; margin:0;
+.row {margin: 0; border:1px solid #000 !important;} 
+#header{
+	border: 0;
+	padding: 2px 0px 2px 0px; /*top right bottom left*/
+	position: fixed; 
+	top:0; left:0; 
+	width:100%; 
+	z-index: 10000; 
+	margin:0;
 	background: #232526; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #232526 , #414345); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #232526 , #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	-webkit-box-shadow: 0 5px 10px #aaa;
+	background: -webkit-linear-gradient(to left, #232526 , #414345); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #232526 , #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	/*-webkit-box-shadow: 0 5px 10px #aaa;
            -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-		}
+                box-shadow: 0 5px 10px #aaa;*/
+}
 #header h1 {color: #fff;}
 
-#placeholder { height:80px;}
+/*#placeholder { height:80px;}*/
+#slider {margin-top: 103px; margin-left:0; margin-right: 0; border:0;}
 
 .penis{height: 300px; background: #cdcdcd; width: 100%;border:1px solid #000;}
 .penis2{height: 350px; background: #cdcdcd; width: 100%;border:1px solid #000;}
@@ -17,9 +25,13 @@ background: linear-gradient(to left, #232526 , #414345); /* W3C, IE 10+/ Edge, F
 
 .nopadding{padding: 0;}
 
+/*.nomargin{margin: 0;}*/
+
 .logo{font-size:3em; color: red;   /*display: flex;
  align-items: center;
   justify-content: center;*/
   /*text-align:center;*/}
   
   .smart{color:#fff;}
+  
+  .img-responsive{max-width: 40%; height: auto; display: block;}
