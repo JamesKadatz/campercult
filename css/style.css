@@ -16,6 +16,7 @@ body{font-family: 'Inconsolata';}
 	/*background: linear-gradient(to left, #1e130c , #9a8478);*/ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
      
 }
+#tabelle > table > tbody > tr > td {border:0 !important;}
 #header h1 {color: #fff;}
 
 #placeholder { border: 0 !important; color: #fff;}
@@ -29,8 +30,8 @@ body{font-family: 'Inconsolata';}
 .row-main{padding: 0px 0px 40px 0px; /*top right bottom left*/}
 
 .rowprodukt h2{color:#35635b; font-size: 3em; margin-top:5px; margin-bottom: 5px;}
-.produkt-header{border-top: 2px solid #a3cd9e; border-bottom: 2px solid #a3cd9e; }
-.produkt-text{font-size: 1.4em; border-top: 0px solid #a3cd9e; padding-top: 20px; }
+.produkt-header{border-top: 1px solid #a3cd9e; border-bottom: 1px solid #a3cd9e; }
+.produkt-text{font-size: 1.4em; border: 0; padding-top: 20px; }
 .nopadding{padding: 0;}
 
 /*.nomargin{margin: 0;}*/

@@ -89,13 +89,13 @@
 		<!--<div class="hidden-xs">Deine Mudda</div>-->
 		
 		<div class="row nomargin row-header">
-			<div class="col-md-2"></div>
-			<div class="col-md-8 rowprodukt">
+			<div class="col-md-1"></div>
+			<div class="col-md-10 rowprodukt">
 				<div class="produkt-header" id="produkt">
 				<h2 >Produkt</h2>
 				</div>
 			</div>
-			<div class="col-md-2"></div>
+			<div class="col-md-1"></div>
 		</div>
 		<div class="row nomargin row-main">
 			<div class="col-md-2"></div>
@@ -108,13 +108,13 @@
 		</div>
 		
 				<div class="row nomargin row-header">
-			<div class="col-md-2"></div>
-			<div class="col-md-8 rowprodukt">
+			<div class="col-md-1"></div>
+			<div class="col-md-10 rowprodukt">
 				<div class="produkt-header">
 				<h2 id="gallerie">Gallerie</h2>
 				</div>
 			</div>
-			<div class="col-md-2"></div>
+			<div class="col-md-1"></div>
 		</div>
 		<div class="row nomargin row-main">
 			<div class="col-md-2"></div>
@@ -127,13 +127,13 @@
 		</div>
 		
 			<div class="row nomargin row-header">
-			<div class="col-md-2"></div>
-			<div class="col-md-8 rowprodukt">
+			<div class="col-md-1"></div>
+			<div class="col-md-10 rowprodukt">
 				<div class="produkt-header">
 				<h2 id="motivation">Motivation</h2>
 				</div>
 			</div>
-			<div class="col-md-2"></div>
+			<div class="col-md-1"></div>
 		</div>
 		<div class="row nomargin row-main">
 			<div class="col-md-2"></div>
@@ -146,22 +146,44 @@
 		</div>
 		
 		<div class="row nomargin row-header">
-			<div class="col-md-2"></div>
-			<div class="col-md-8 rowprodukt">
+			<div class="col-md-1"></div>
+			<div class="col-md-10 rowprodukt">
 				<div class="produkt-header">
 				<h2 id="kontakt">Kontakt</h2>
 				</div>
 			</div>
-			<div class="col-md-2"></div>
+			<div class="col-md-1"></div>
 		</div>
 		<div class="row nomargin row-main">
-			<div class="col-md-2"></div>
-			<div class="col-md-8 rowprodukt">
-				<div class="produkt-text">
-					dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+			<div class="col-md-1"></div>
+			<div class="col-md-5 rowprodukt">
+				<div class="produkt-text" >
+		
 				</div>
 			</div>
-			<div class="col-md-2"></div>
+				<div class="col-md-5 rowprodukt">
+				<div class="produkt-text">
+				 <form role="form" id="frmContact">
+                <div class="form-group" id="frmGrpName">
+                    <label for="name" class="control-label">Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Ihr Vorname">
+                </div>
+                <div class="form-group" id="frmGrpEmail">
+                    <label for="email" class="control-label">E-Mail</label>
+                    <input type="text" id="email" class="form-control"  placeholder="Ihre E-Mail Adresse">
+                </div>
+                <div class="form-group" id="frmGrpNachricht">
+                    <label for="nachricht" class="control-label">Nachricht</label>
+                    <textarea id="nachricht" class="form-control" rows="3" placeholder="Ihre Nachricht"></textarea>
+                </div>
+
+                <div class="form-group text-right">
+                    <button type="submit" id="submitBtn" class="btn btn-primary btn-lg">Absenden</button>
+                </div>
+            </form>
+				</div>
+			</div>
+			<div class="col-md-1"></div>
 		</div>
 		
 		<div class="row nomargin">
@@ -180,7 +202,7 @@
 		<script>
 $(document).ready(function(){
   // Add scrollspy to <body>
-  $('body').scrollspy({target: ".navbar", offset:150});   
+  $('body').scrollspy({target: ".navbar", offset:50});   
 
   // Add smooth scrolling on all links inside the navbar
   $("#myNavbar a").on('click', function(event) {
@@ -202,6 +224,61 @@ $(document).ready(function(){
     });
   });
 });
+</script>
+
+<script>
+    function validateEmail(email) {
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
+
+    $( '#frmContact').submit( function() {
+        var formControl = true;
+
+        $( '#frmGrpName' ).removeClass( 'has-error' );
+        $( '#frmGrpEmail' ).removeClass( 'has-error' );
+        $( '#frmGrpNachricht' ).removeClass( 'has-error' );
+        
+
+
+        var name = $( '#name' );
+        var email = $( '#email' );
+        var nachricht = $( '#nachricht' );
+        
+
+        if(vorname.val() == '') {
+            formControl = false;
+            $( '#frmGrpName' ).addClass( 'has-error' );
+        }
+
+        
+
+        if(nachricht.val() == '') {
+            formControl = false;
+            $( '#frmGrpNachricht' ).addClass( 'has-error' );
+        }
+
+        if(validateEmail(email.val()) == false) {
+            formControl = false;
+            $( '#frmGrpEmail' ).addClass( 'has-error' );
+        }
+
+      
+
+        if(formControl) {
+            $.ajax({
+                type: "POST",
+                url: "php/senden.php",
+                data: { keyword:name }
+            }).done(function(msg) {
+                $( '#message' ).addClass( 'alert' );
+                $( '#message' ).addClass( 'alert-success' );
+                $( '#message').html( msg );
+            });
+        }
+
+        return false;
+    } );
 </script>
   </body>
 </html>
