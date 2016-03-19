@@ -63,18 +63,27 @@ a.links {
 	
 }
 
- a.links:hover {
+#main-menu > li > a:hover {
+    color: #000 ;
+	text-decoration: none;
+	border-top: 2px solid #e5f1e3;
+	border-bottom: 2px solid #fff;
+}
+
+#main-menu > li > a:active {
     color: #000;
 	text-decoration: none;
 	border-top: 2px solid #e5f1e3;
-border-bottom: 2px solid #fff;}
+	border-bottom: 2px solid #fff;
+}
 
-a.links:active {
+/* Bootstrap scrollspy sets the surrounding li to class .active so we have to adress it this way */
+#main-menu > .active > a{
     color: #000;
 	text-decoration: none;
 	border-top: 2px solid #e5f1e3;
-border-bottom: 2px solid #fff;}
-
+	border-bottom: 2px solid #fff;
+}
    /*
 .menu menuul{
     margin: 0;
