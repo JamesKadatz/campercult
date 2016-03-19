@@ -25,7 +25,8 @@ body{font-family: 'Inconsolata';}
 .penis2{height: 350px; background: #cdcdcd; width: 100%;border:1px solid #000;}
 .muschi{height: 50px; background: #abef03; width: 100%;}
 
-.rowprodukt{padding: 20px 0px 20px 0px; /*top right bottom left*/ }
+.row-header{padding: 20px 0px 0px 0px; /*top right bottom left*/margin-top: 50px;  }
+.row-main{padding: 0px 0px 40px 0px; /*top right bottom left*/}
 
 .rowprodukt h2{color:#35635b; font-size: 3em; margin-top:5px; margin-bottom: 5px;}
 .produkt-header{border-top: 2px solid #a3cd9e; border-bottom: 2px solid #a3cd9e; }
@@ -57,6 +58,7 @@ ul li {
 	padding-left: 30px;
 	padding-right: 30px;
 }
+
 
 #main-menu > li > a {
     color: #000;
