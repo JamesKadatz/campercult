@@ -1,52 +1,94 @@
 body{font-family: 'Inconsolata';}
 
 
-.row {margin: 0; border:0px solid #000} 
+.row {
+	margin: 0; 
+	border:0px solid #000;
+}
+ 
 .header{
 	border: 0 ;
 	padding: 2px 0px 2px 0px; /*top right bottom left*/
 	position: fixed; 
-	top:0; left:0; 
+	top:0; 
+	left:0; 
 	width:100%; 
 	z-index: 10000; 
 	margin:0;
 	/*opacity: .9; filter:Alpha(Opacity=50);*/
-	background: #529471;/*#3d322c; fallback for old browsers */
-	/*background: -webkit-linear-gradient(to left, #1e130c , #9a8478);*/ /* Chrome 10-25, Safari 5.1-6 */
-	/*background: linear-gradient(to left, #1e130c , #9a8478);*/ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-     
+	background: #529471;     
 }
-#tabelle > table > tbody > tr > td {border:0 !important;}
-#header h1 {color: #fff;}
 
-#placeholder { border: 0 !important; color: #fff;}
-#slider {margin-top: 130px; margin-left:0; margin-right: 0; border:0;}
+.nopadding{
+	padding: 0;
+}
 
-.penis{height: 300px; background: #cdcdcd; width: 100%;border:1px solid #000;}
-.penis2{height: 350px; background: #cdcdcd; width: 100%;border:1px solid #000;}
-.muschi{height: 50px; background: #abef03; width: 100%;}
+.logo{
+	max-width: 40%; 
+	height: auto; 
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto; 
+}
 
-.row-header{padding: 20px 0px 0px 0px; /*top right bottom left*/margin-top: 50px;  }
-.row-main{padding: 0px 0px 40px 0px; /*top right bottom left*/}
 
-.rowprodukt h2{color:#35635b; font-size: 3em; margin-top:5px; margin-bottom: 5px;}
-.produkt-header{border-top: 1px solid #a3cd9e; border-bottom: 1px solid #a3cd9e; }
-.produkt-text{font-size: 1.4em; border: 0; padding-top: 20px; }
-.nopadding{padding: 0;}
+#placeholder {
+	border: 0 !important; 
+	color: #fff;
+}
 
-/*.nomargin{margin: 0;}*/
+#header-img {
+	margin-top: 100px;  
+	margin-left:0; 
+	margin-right: 0; 
+	border-bottom: 0;
+}
 
-.logo{font-size:3em; color: red;   /*display: flex;
- align-items: center;
-  justify-content: center;*/
-  /*text-align:center;*/}
-  
- /* .smart{color:#fff;}*/
-  
-  .foto{max-width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto;}
-  
- .menu {
-	padding-top: 50px;
+
+
+/*------------Main----------------------------------------------------------------*/
+
+.row-header{
+	padding: 20px 0px 0px 0px; /*top right bottom left*/
+	margin-top: 50px;  
+}
+
+.row-main{
+	padding: 0px 0px 40px 0px; /*top right bottom left*/
+}
+
+.section-header{
+	border-top: 1px solid #a3cd9e;
+	border-bottom: 1px solid #a3cd9e; 
+	padding-left: 20px; 
+	width: 100% 
+}
+
+.section-header h2{
+	color:#35635b; 
+	font-size: 3em; 
+	margin-top:5px; 
+	margin-bottom: 5px; 
+}
+
+.section-text{
+	font-size: 1.4em; 
+	border: 0; 
+	padding-top: 20px; 
+}
+
+#section-kontakt{
+	font-size: 1.4em; 
+	border: 0; 
+	padding-top: 45px; 
+}
+
+
+
+/*------------Navbar, Menu----------------------------------------------------------------*/
+ 
+.menu {
+	padding-top: 4%;
     overflow: hidden;
 	font-size: 1.2em;
 	font-family: 'Inconsolata', ;
@@ -60,7 +102,6 @@ ul li {
 	padding-right: 30px;
 }
 
-
 #main-menu > li > a {
     color: #000;
     display: block;
@@ -71,7 +112,6 @@ ul li {
 	border-top: 2px solid #529471;
 	border-bottom: 2px solid #e5f1e3;
 	background: transparent;
-	
 }
 
 #main-menu > li > a:hover {
@@ -88,7 +128,6 @@ ul li {
 	border-bottom: 2px solid #529471;
 }
 
-/* Bootstrap scrollspy sets the surrounding li to class .active so we have to adress it this way */
 #main-menu > .active > a{
     color: #000;
 	text-decoration: none;
@@ -96,18 +135,31 @@ ul li {
 	border-bottom: 2px solid #e5f1e3;
 	
 }
-   /*
-.menu menuul{
-    margin: 0;
-    padding:0;
+
+
+
+/*------------Button----------------------------------------------------------------*/
+
+.btn {
+	padding: 14px 24px;
+    border: 0;
+	font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background: #529471;
+    color: #ffffff;
+	
+}
+.btn.sharp {
+  border-radius:0;
 }
 
 
+/*------------Other Stuff----------------------------------------------------------------*/
 
-.menu a:link {
-    color: #000;
-}
-
-}   */
-
-
+.penis{height: 300px; background: #cdcdcd; width: 100%;border:1px solid #000;}
+.penis2{height: 350px; background: #cdcdcd; width: 100%;border:1px solid #000;}
+.muschi{height: 50px; background: #abef03; width: 100%;}
