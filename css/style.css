@@ -3,11 +3,18 @@ body{font-family: 'Inconsolata';}
 
 .row {
 	margin: 0; 
-	border:0px solid #000;
 }
+
+.nopadding{
+	padding: 0;
+}
+
+
+
+/*------------Header, Logo----------------------------------------------------------------*/
  
 .header{
-	border: 0 ;
+	border: 0;
 	padding: 2px 0px 2px 0px; /*top right bottom left*/
 	position: fixed; 
 	top:0; 
@@ -19,9 +26,6 @@ body{font-family: 'Inconsolata';}
 	background: #529471;     
 }
 
-.nopadding{
-	padding: 0;
-}
 
 .logo{
 	max-width: 40%; 
@@ -37,51 +41,7 @@ body{font-family: 'Inconsolata';}
 	color: #fff;
 }
 
-#header-img {
-	margin-top: 100px;  
-	margin-left:0; 
-	margin-right: 0; 
-	border-bottom: 0;
-}
 
-
-
-/*------------Main----------------------------------------------------------------*/
-
-.row-header{
-	padding: 20px 0px 0px 0px; /*top right bottom left*/
-	margin-top: 50px;  
-}
-
-.row-main{
-	padding: 0px 0px 40px 0px; /*top right bottom left*/
-}
-
-.section-header{
-	border-top: 1px solid #a3cd9e;
-	border-bottom: 1px solid #a3cd9e; 
-	padding-left: 20px; 
-	width: 100% 
-}
-
-.section-header h2{
-	color:#35635b; 
-	font-size: 3em; 
-	margin-top:5px; 
-	margin-bottom: 5px; 
-}
-
-.section-text{
-	font-size: 1.4em; 
-	border: 0; 
-	padding-top: 20px; 
-}
-
-#section-kontakt{
-	font-size: 1.4em; 
-	border: 0; 
-	padding-top: 45px; 
-}
 
 
 
@@ -134,6 +94,63 @@ ul li {
 	border-top: 2px solid #e5f1e3;
 	border-bottom: 2px solid #e5f1e3;
 	
+}
+
+
+
+/*------------Header img----------------------------------------------------------------*/
+
+#header-img {
+	margin-top: 100px;  
+	margin-left:0; 
+	margin-right: 0; 
+	border-bottom: 0;
+}
+
+
+
+/*------------Main----------------------------------------------------------------*/
+
+.row-header{
+	padding: 20px 0px 0px 0px; /*top right bottom left*/
+	margin-top: 50px;  
+}
+
+.row-main{
+	padding: 0px 0px 40px 0px; /*top right bottom left*/
+}
+
+.section-header{
+	border-top: 1px solid #a3cd9e;
+	border-bottom: 1px solid #a3cd9e; 
+	padding-left: 20px; 
+}
+
+.section-header h2{
+	color:#35635b; 
+	font-size: 3em; 
+	margin-top:5px; 
+	margin-bottom: 5px; 
+}
+
+.section-text{
+	font-size: 1.4em; 
+	border: 0; 
+	padding-top: 20px; 
+}
+
+#section-kontakt{
+	font-size: 1.4em; 
+	border: 0; 
+	padding-top: 45px; 
+}
+
+
+.row-footer{
+	padding: 40px 0px 0px 0px; /*top right bottom left*/
+	margin-top: 50px; 
+	height: 100px;
+	border-top: 1px solid #e5f1e3;
 }
 
 
