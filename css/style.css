@@ -112,10 +112,14 @@ ul li {
 /*------------Header img----------------------------------------------------------------*/
 
 #header-img {
-	margin-top: 100px;  
 	margin-left:0; 
 	margin-right: 0; 
 	border-bottom: 0;
+	width: 100%;
+	height:100vh; 
+	background: url(https://unsplash.it/g/1349/550?image=551);
+    background-size: cover;
+    background-position: center;
 }
 
 
