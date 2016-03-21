@@ -1,4 +1,6 @@
-body{font-family: 'Inconsolata';}
+body{
+	font-family: 'Inconsolata';
+}
 
 
 .row {
@@ -29,6 +31,13 @@ body{font-family: 'Inconsolata';}
 
 .logo{
 	max-width: 40%; 
+	height: auto; 
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto; 
+}
+
+.logo-smart{
 	height: auto; 
 	display: block; 
 	margin-left: auto; 
@@ -96,7 +105,9 @@ ul li {
 	
 }
 
-
+.smart{
+	padding-top: 8%;
+}
 
 /*------------Header img----------------------------------------------------------------*/
 
@@ -109,11 +120,11 @@ ul li {
 
 
 
-/*------------Main----------------------------------------------------------------*/
+/*------------Main, Section----------------------------------------------------------------*/
 
 .row-header{
-	padding: 20px 0px 0px 0px; /*top right bottom left*/
-	margin-top: 50px;  
+	padding: 150px 0px 0px 0px; /*top right bottom left*/
+	margin-top: 0px;  
 }
 
 .row-main{
@@ -134,7 +145,8 @@ ul li {
 }
 
 .section-text{
-	font-size: 1.4em; 
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 1.3em; 
 	border: 0; 
 	padding-top: 20px; 
 }
