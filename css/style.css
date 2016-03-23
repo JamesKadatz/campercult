@@ -16,7 +16,7 @@ body{
 /*------------Header, Logo----------------------------------------------------------------*/
  
 .header{
-	border: 0;
+	border-bottom: 1px solid #d1dbbd ;
 	padding: 2px 0px 2px 0px; /*top right bottom left*/
 	position: fixed; 
 	top:0; 
@@ -25,7 +25,10 @@ body{
 	z-index: 10000; 
 	margin:0;
 	/*opacity: .9; filter:Alpha(Opacity=50);*/
-	background: #2e3837;     
+	background: #fff;    
+-webkit-box-shadow: 0px 1px 2px #ecf7c5;
+-moz-box-shadow: 0px 1px 2px #ecf7c5;
+box-shadow: 0px 1px 2px #ecf7c5;
 }
 
 
@@ -83,7 +86,7 @@ ul li {
 }
 
 #main-menu > li > a {
-    color: #fff;
+    color: #2e3837;
     display: block;
     line-height: 0.4em;
     padding: 0.5em 0em;
@@ -95,10 +98,10 @@ ul li {
 }
 
 #main-menu > li > a:hover {
-    color: #fff ;
+    color: #2e3837 ;
 	text-decoration: none;
 	/*border-top: 2px solid #e5f1e3;*/
-	border-bottom: 2px solid #e5f1e3;
+	border-bottom: 2px solid #d1dbbd;
 }
 
 #main-menu > li > a:active {
@@ -106,15 +109,15 @@ ul li {
 	text-decoration: none;
 	/*border-top: 2px solid #e5f1e3;
 	border-bottom: 2px solid #2e3837;*/
-	border-bottom: 2px solid #e5f1e3;
+	border-bottom: 2px solid #d1dbbd;
 }
 
 #main-menu > .active > a{
-    color: #fff;
+    color: #2e3837;
 	text-decoration: none;
 	/*border-top: 2px solid #2e3837;
 	border-bottom: 2px solid #2e3837;*/
-	border-bottom: 2px solid #e5f1e3;
+	border-bottom: 2px solid #d1dbbd;
 	
 }
 
