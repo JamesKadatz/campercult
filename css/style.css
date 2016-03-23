@@ -25,7 +25,7 @@ body{
 	z-index: 10000; 
 	margin:0;
 	/*opacity: .9; filter:Alpha(Opacity=50);*/
-	background: #529471;     
+	background: #2e3837;     
 }
 
 
@@ -65,50 +65,55 @@ body{
 /*------------Navbar, Menu----------------------------------------------------------------*/
  
 .menu {
-	padding-top: 4%;
+	padding-top: 3.1%;
     overflow: hidden;
-	font-size: 1.2em;
-	font-family: 'Inconsolata', ;
+	font-size: 1.1em;
+	letter-spacing: 0.1em;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 ul li {
 
     display: inline-block;
     list-style-type: none;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 #main-menu > li > a {
-    color: #000;
+    color: #fff;
     display: block;
-    line-height: 2em;
+    line-height: 0.4em;
     padding: 0.5em 0em;
 	padding-left: 10px;
 	padding-right: 10px;
-	border-top: 2px solid #529471;
-	border-bottom: 2px solid #e5f1e3;
+	/*border-top: 2px solid #2e3837;
+	border-bottom: 2px solid #e5f1e3;*/
 	background: transparent;
 }
 
 #main-menu > li > a:hover {
-    color: #000 ;
+    color: #fff ;
 	text-decoration: none;
-	border-top: 2px solid #e5f1e3;
-	border-bottom: 2px solid #529471;
+	/*border-top: 2px solid #e5f1e3;*/
+	border-bottom: 2px solid #e5f1e3;
 }
 
 #main-menu > li > a:active {
     color: #fff;
 	text-decoration: none;
-	border-top: 2px solid #e5f1e3;
-	border-bottom: 2px solid #529471;
+	/*border-top: 2px solid #e5f1e3;
+	border-bottom: 2px solid #2e3837;*/
+	border-bottom: 2px solid #e5f1e3;
 }
 
 #main-menu > .active > a{
-    color: #000;
+    color: #fff;
 	text-decoration: none;
-	border-top: 2px solid #e5f1e3;
+	/*border-top: 2px solid #2e3837;
+	border-bottom: 2px solid #2e3837;*/
 	border-bottom: 2px solid #e5f1e3;
 	
 }
@@ -283,11 +288,14 @@ animation-delay: 0.7s;
 
 .gallery{
     margin-top: 100px;
+
 }
 .gallery-item{
 	
 	margin-bottom: 30px;
 }
+
+
 .modal-footer{
 	text-align: center;
 }
@@ -296,11 +304,6 @@ animation-delay: 0.7s;
 
 }
 
-ul li{
 
-		padding-left: 0;
-	padding-right: 0;
-
-}
 
 
