@@ -280,3 +280,27 @@ color: #2e3837;
 -moz-animation-delay: 0.7s;
 animation-delay: 0.7s;
 }
+
+.gallery{
+    margin-top: 100px;
+}
+.gallery-item{
+	
+	margin-bottom: 30px;
+}
+.modal-footer{
+	text-align: center;
+}
+.pagination{
+	margin: 0;
+
+}
+
+ul li{
+
+		padding-left: 0;
+	padding-right: 0;
+
+}
+
+
