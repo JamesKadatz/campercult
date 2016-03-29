@@ -1,5 +1,5 @@
 body{
-	font-family: 'Inconsolata';
+font-family: 'Raleway', sans-serif;
 }
 
 
@@ -16,7 +16,7 @@ body{
 /*------------Header, Logo----------------------------------------------------------------*/
  
 .header{
-	border-bottom: 1px solid #d1dbbd ;
+	border-bottom: 0px solid #d1dbbd ;
 	padding: 2px 0px 2px 0px; /*top right bottom left*/
 	position: fixed; 
 	top:0; 
@@ -25,19 +25,18 @@ body{
 	z-index: 10000; 
 	margin:0;
 	/*opacity: .9; filter:Alpha(Opacity=50);*/
-	background: #fff;    
--webkit-box-shadow: 0px 1px 2px #ecf7c5;
+	background: #2e3837;    
+/*-webkit-box-shadow: 0px 1px 2px #ecf7c5;
 -moz-box-shadow: 0px 1px 2px #ecf7c5;
-box-shadow: 0px 1px 2px #ecf7c5;
+box-shadow: 0px 1px 2px #ecf7c5;*/
 }
 
 
 .logo{
 	max-width: 40%; 
-	height: auto; 
-	display: block; 
-	margin-left: auto; 
-	margin-right: auto; 
+	position: relative;
+	display: inline-block;
+	margin: 15px 25px;
 }
 
 .logo2{
@@ -45,7 +44,9 @@ box-shadow: 0px 1px 2px #ecf7c5;
 	height: auto; 
 	display: block; 
 	margin-left: auto; 
-	margin-right: auto; 
+	margin-right: auto;
+padding-top: 50px;	
+margin-bottom:0;
 }
 
 .logo-smart{
@@ -66,59 +67,79 @@ box-shadow: 0px 1px 2px #ecf7c5;
 
 
 /*------------Navbar, Menu----------------------------------------------------------------*/
- 
-.menu {
-	padding-top: 3.1%;
-    overflow: hidden;
-	font-size: 1.1em;
-	letter-spacing: 0.1em;
-	font-family: 'Oswald', sans-serif;
-	font-weight: bold;
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#main-menu >  li > a{
+	color:#fff; font-family: 'Raleway', sans-serif; 	overflow: hidden;
+	padding: 0 4px;
+	height: 1em;}
+	
+	#main-menu >  li > a span{
+	position: relative;
+	display: inline-block;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;}
+	
+	
+nav a {
+	position: relative;
+	display: inline-block;
+	margin: 15px 25px;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
 	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.3em;
+	font-family: 'Raleway', sans-serif;
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+.menu {
+	position: relative;
+	display: inline-block;
+	margin: 15px 25px;
 }
 
 ul li {
 
     display: inline-block;
     list-style-type: none;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
-#main-menu > li > a {
-    color: #2e3837;
-    display: block;
-    line-height: 0.4em;
-    padding: 0.5em 0em;
-	padding-left: 10px;
-	padding-right: 10px;
-	/*border-top: 2px solid #2e3837;
-	border-bottom: 2px solid #e5f1e3;*/
-	background: transparent;
+#main-menu > li > a span::before {
+		position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+	font-weight: 700;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
 }
 
-#main-menu > li > a:hover {
-    color: #2e3837 ;
-	text-decoration: none;
-	/*border-top: 2px solid #e5f1e3;*/
-	border-bottom: 2px solid #d1dbbd;
-}
-
-#main-menu > li > a:active {
-    color: #fff;
-	text-decoration: none;
-	/*border-top: 2px solid #e5f1e3;
-	border-bottom: 2px solid #2e3837;*/
-	border-bottom: 2px solid #d1dbbd;
+#main-menu > li > a:hover span,
+#main-menu > li > a:focus span {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
 }
 
 #main-menu > .active > a{
-    color: #2e3837;
-	text-decoration: none;
-	/*border-top: 2px solid #2e3837;
-	border-bottom: 2px solid #2e3837;*/
-	border-bottom: 2px solid #d1dbbd;
-	
+	background: transparent;
 }
 
 .smart{
@@ -160,13 +181,13 @@ ul li {
 
 .section-header{
 	border-top: 0px solid #a3cd9e;
-	border-bottom: 1px solid #91aa9d; 
+	border-bottom: 0px solid #91aa9d; 
 	padding-left: 20px; 
 }
 
 .section-header h2{
-	font-family: 'Oswald', sans-serif;
-	font-size: 1.8em; 
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.4em; 
 	font-weight: bold;
 	letter-spacing: 0.4em;
 	text-transform: uppercase;
@@ -176,14 +197,15 @@ ul li {
 }
 
 .section-text{
-	font-family: 'Droid Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 1.3em; 
+	font-weight: 400;
 	border: 0; 
 	padding-top: 20px; 
 }
 
 .section-text4{
-	font-family: 'Droid Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 1.3em; 
 	border: 0; 
 	padding-top: 20px; 
@@ -191,28 +213,99 @@ ul li {
 }
 
 .section-text2{
-	font-family: 'Oswald', sans-serif;
-	font-size: 1.7em; 
-	font-weight: bold;
-	letter-spacing: 0.2em;
-	text-transform: uppercase;
-	border: 0; 
-	padding-top: 0px; 
-text-align: center;
-color: #fff;
+	margin:0;
+	padding:0;
+	
+}
+
+.section-text2 h6{
+	padding:0;
+	font-family: 'Raleway', sans-serif;
+	font-size: 2.2em; 
+font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase; color: #fff;
 }
 
 .section-text3{
-	font-family: 'Oswald', sans-serif;
-	font-size: 1.8em; 
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.4em; 
 	font-weight: bold;
 	letter-spacing: 0.7em;
 	text-transform: uppercase;
-	border-bottom: 1px solid #91aa9d; 
+	border-bottom: 0px solid #91aa9d; 
 	padding-top: 70px;
 	padding-bottom: 10px;
 text-align: center;
 color: #2e3837;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 2em; 
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+    margin-top: 70px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+	color: #2e3837;
+}
+
+h3:before {
+    content:"";
+    margin: 0 auto; /* this centers the line to the full width specified */
+    position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 15px; left: 0; right: 0; bottom: 0;
+    width: 95%;
+    z-index: -1;
+}
+
+h3 span { 
+    /* to hide the lines from behind the text, you have to set the background color the same as the container */ 
+    background: #fff; 
+	
+    padding: 0 20px; 
+}
+
+h3.double:before { 
+    /* this is just to undo the :before styling from above */
+    border-top: none; 
+}
+
+h3.double:after {
+    border-bottom: 1px solid #2e3837;
+    content: "";
+    margin: 0 auto; /* this centers the line to the full width specified */
+    position: absolute;
+    top: 45%; left: 0; right: 0;
+    width: 95%;
+    z-index: -1;
+}
+
+h4 {
+    font-family: 'Raleway', sans-serif;
+	font-size: 1.8em; 
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+    position: relative;
+	color: #2e3837;
+}
+
+h4 span {
+    background-color: white;
+    padding-right: 10px;
+}
+
+h4:after {
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0.5em;
+    border-top: 1px solid #2e3837;
+    z-index: -1;
 }
 
 #section-kontakt{
@@ -228,7 +321,7 @@ color: #2e3837;
 	margin-top: 0px; 
 	height: 100px;
 	border-top: 1px solid #e5f1e3;
-		font-family: 'Droid Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 1.3em; 
 }
 
@@ -306,7 +399,5 @@ animation-delay: 0.7s;
 	margin: 0;
 
 }
-
-
 
 

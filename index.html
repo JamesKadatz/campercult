@@ -7,16 +7,16 @@
 	
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Inconsolata|Droid+Sans|Oswald400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway|Source+Code+Pro|Inconsolata|Droid+Sans|Oswald400,700|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,700,600,300,800' rel='stylesheet' type='text/css'>
 	
   
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50" >
 		
-		<div class="row" id="placeholder">
+		<!--<div class="row" id="placeholder">
 			<div class="col-md-12 hidden-xs" id="home">.col-md-12</div>
 		</div>
-		
+		-->
 		<!-----------Navbar, Logo----------->
 		
 		<div class="row">
@@ -24,7 +24,7 @@
 			 <div class="container-fluid">
 				<div class="hidden-xs">
 				<div class="col-md-4">
-					<img src="CC_Logo_Typo_Schwarz.png" class="img-responsive logo"/>
+					<img src="CC_Logo_Typo_Weiss.png" class="img-responsive logo"/>
 				</div>
 				</div>
 				
@@ -44,10 +44,10 @@
 				<div class="col-md-8 col-xs-12 collapse navbar-collapse" id="myNavbar">
 					
 					<ul class="nav navbar-nav menu" id="main-menu">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#camper">Camper</a></li>
-						<li><a href="#preise">Preise</a></li>
-						<li><a href="#kontakt">Kontakt</a></li>
+						<li><a href="#home"><span data-hover="Home">Home</span></a></li>
+						<li><a href="#camper"><span data-hover="Camper">Camper</span></a></li>
+						<li><a href="#preise"><span data-hover="Verkauf">Verkauf</span></a></li>
+						<li><a href="#kontakt"><span data-hover="kontakt">Kontakt</span></a></li>
 					</ul>
 				</div>
 				</div>
@@ -58,7 +58,8 @@
 		
 		<!---Header img-->
 		<div id="header-img">
-		<div class="parallax-window" data-parallax="scroll" data-image-src="https://unsplash.it/1349/550?image=551">
+		<!--<div class="parallax-window" data-parallax="scroll" data-image-src="https://unsplash.it/1349/550?image=551">-->
+		<div class="parallax-window" data-parallax="scroll" data-image-src="download.jpg">
 		<div class="row nomargin">
 			<div class="col-lg-3 nopadding">
 				
@@ -73,15 +74,15 @@
 		</div>
 		
 		<div class="row nomargin">
-			<div class="col-lg-3 nopadding">
+			<div class="col-lg-2 nopadding">
 				
 			</div>
-			<div class="col-lg-6 nopadding section-text2 fade-in one">
+			<div class="col-lg-8 nopadding section-text2 fade-in one">
 				
-			Verkauf und Vermietung von Campingbussen
+			<h6>Verkauf und Vermietung von Campingbussen</h6>
 				
 			</div>
-			<div class="col-lg-3 nopadding">
+			<div class="col-lg-2 nopadding">
 				
 			</div>
 		</div>
@@ -144,9 +145,10 @@
 			<div class="col-lg-3 nopadding">
 				
 			</div>
-			<div class="col-lg-6 nopadding section-text3">
+			<div class="col-lg-6">
 				
-			Kurz & Knapp
+			<h3 class="double"><span>Kurz & Knapp</span></h3>
+
 				
 			</div>
 			<div class="col-lg-3 nopadding">
@@ -188,7 +190,7 @@
 		<div class="row row-header" id="camper">
 			<div class="col-md-1"></div>
 			<div class="col-md-10 section-header">
-				<h2>Der Camper</h2>
+				<h4><span>Der Camper</span></h4>
 			</div>
 			<div class="col-md-1"></div>
 		</div>
@@ -207,6 +209,8 @@
 	    <div class="gallery">
 		<div class="container">
 			<div class="row">
+			
+			
                 <div class="col-xs-3 gallery-item">
                     <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
                         <img src="img/img1.jpg" class="img-responsive img-gallery" alt="First image">
@@ -229,11 +233,9 @@
                     <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
                         <img src="img/img4.jpg" class="img-responsive img-gallery" alt="Fourth image">
                     </a>
-                </div> <!-- /.col -->
-            </div> <!--/.row  -->
-			
-						<div class="row">
-                <div class="col-xs-3 gallery-item">
+               </div>
+			   
+			   <div class="col-xs-3 gallery-item">
                     <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
                         <img src="img/img11.jpg" class="img-responsive img-gallery" alt="First image">
                     </a>
@@ -255,8 +257,13 @@
                     <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
                         <img src="img/img14.jpg" class="img-responsive img-gallery" alt="Fourth image">
                     </a>
-                </div> <!-- /.col -->
+               </div>
+                   
+				
+				
             </div> <!--/.row  -->
+			
+						
 		</div> <!-- /.container -->
 	</div> <!-- /.gallery -->
 
@@ -290,7 +297,7 @@
 		<div class="row row-header" id="preise">
 			<div class="col-md-1"></div>
 			<div class="col-md-10 section-header">
-				<h2>Preise</h2>
+				<h4><span>Verkauf</span></h4>
 			</div>
 			<div class="col-md-1"></div>
 		</div>
@@ -306,7 +313,7 @@
 		<div class="row row-header" id="kontakt">
 			<div class="col-md-1"></div>
 			<div class="col-md-10 section-header">
-				<h2 >Kontakt</h2>
+				<h4><span>Kontakt</span></h4>
 			</div>
 			<div class="col-md-1"></div>
 		</div>
@@ -342,9 +349,9 @@
 			</div>
 			<div class="col-md-1"></div>
 		</div>
-		<div>
+		<!--<div>
 		<div class="parallax-window" id="foot" data-parallax="scroll" data-image-src="https://unsplash.it/1349/550?image=551">
-		</div></div>
+		</div></div>-->
 		<div class="row row-footer">
 			<div class="col-md-2"></div>
 			<div class="col-md-4">Footer</div>
@@ -373,7 +380,7 @@
 		<script src="pjs/parallax.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		
-		<script>$('.parallax-window').parallax({imageSrc: 'https://unsplash.it/1349/550?image=551'});</script>
+		<script>$('.parallax-window').parallax({imageSrc: 'download.jpg'});</script>
 		
 		<script>
 			$(document).ready(function(){
