@@ -36,7 +36,7 @@ box-shadow: 0px 1px 2px #ecf7c5;*/
 	max-width: 40%; 
 	position: relative;
 	display: inline-block;
-	margin: 15px 25px;
+	margin: 15px 25px 15px 80px;
 }
 
 .logo2{
@@ -238,6 +238,46 @@ text-align: center;
 color: #2e3837;
 }
 
+.title {
+	color: #2e3837;
+    font-size: 2em;
+    position: relative;
+    margin: 0 auto 1em;
+    padding: 3em 1em .25em 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.title:after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 80px;
+    height: 4px;
+    margin-left: -40px;
+    content: '';
+    background-color: #9dafad;
+}
+
+.title2 {
+	color: #2e3837;
+    font-size: 2em;
+    position: relative;
+    margin: 0 auto 1em;
+    padding: 3em 1em .25em 0em;
+    text-align: left;
+    text-transform: uppercase;
+}
+.title2:after {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 80px;
+    height: 4px;
+    margin-left: 20px;
+    content: '';
+    background-color: #9dafad;
+}
+/*
 h3 {
     font-family: 'Raleway', sans-serif;
 	font-weight: 600;
@@ -253,35 +293,35 @@ h3 {
 
 h3:before {
     content:"";
-    margin: 0 auto; /* this centers the line to the full width specified */
-    position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    margin: 0 auto; 
+    position: absolute; 
     top: 15px; left: 0; right: 0; bottom: 0;
     width: 95%;
     z-index: -1;
 }
 
 h3 span { 
-    /* to hide the lines from behind the text, you have to set the background color the same as the container */ 
+   
     background: #fff; 
 	
     padding: 0 20px; 
 }
 
 h3.double:before { 
-    /* this is just to undo the :before styling from above */
+    
     border-top: none; 
 }
 
 h3.double:after {
     border-bottom: 1px solid #2e3837;
     content: "";
-    margin: 0 auto; /* this centers the line to the full width specified */
+    margin: 0 auto; 
     position: absolute;
     top: 45%; left: 0; right: 0;
     width: 95%;
     z-index: -1;
 }
-
+*/
 h4 {
     font-family: 'Raleway', sans-serif;
 	font-size: 1.8em; 
