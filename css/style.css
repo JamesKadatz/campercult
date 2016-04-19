@@ -185,10 +185,11 @@ ul li {
 
 /*------------Main, Section----------------------------------------------------------------*/
 .section1{
-	background: #fff;
+	background: #f0f3f4;
+	margin-bottom: 40px;
 }
 .row-title{
-	padding: 0px 0px 0px 0px; /*top right bottom left*/
+	padding: 60px 0px 0px 0px; /*top right bottom left*/
 	margin: 30px 0px 0px 0px;   /*top right bottom left*/
 }
 
@@ -220,7 +221,7 @@ letter-spacing: 2px;
 
 .title2 {
 	color: #3c4a54;
-font-size: 24px;
+font-size: 22px;
 font-weight: 500;
 letter-spacing: 2px;
     position: relative;
@@ -245,6 +246,35 @@ letter-spacing: 2px;
 	padding: 20px 0px 40px 0px; /*top right bottom left*/
 }
 
+.section-text5{
+	color: #3e3e3e;
+font-size: 22px;
+font-weight: 500;
+letter-spacing: 1px;
+    position: relative;
+	    text-align: center;
+    text-transform: uppercase;
+	margin: 30px 0 60px 0;
+}
+
+.section-text7{
+	color: #3e3e3e;
+font-size: 20px;
+font-weight: 500;
+letter-spacing: 1px;
+    position: relative;
+	margin: 20px 0 0px 0;
+}
+.section-text8{
+
+	color: #7990a0;
+font-size: 14px;
+font-weight: 300;
+letter-spacing: 1px;
+    position: relative;
+	margin: 0px 0 20px 0;
+}
+
 .section-text{
 	font-family: 'Raleway', sans-serif;
 color: #3e3e3e;
@@ -266,6 +296,20 @@ font-weight: 300;
 	margin-bottom: 40px;
 	
 }
+
+.section-text6{
+	font-family: 'Raleway', sans-serif;
+color: #3e3e3e;
+font-size: 16px;
+line-height: 2em;
+font-weight: 300;
+	border: 0; 
+	padding-top: 0px; 
+	text-align: center;
+	margin-bottom: 40px;
+	
+}
+
 
 #section-kontakt{
 	font-size: 1.4em; 
@@ -341,13 +385,17 @@ font-weight: 300;
 animation-delay: 0.7s;
 }
 
+.section-gallery{
+	padding-top: 60px;
+}
+
 .gallery{
-    margin-top: 0px;
+    padding-top: 0px;
 
 }
 .gallery-item{
 	
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 
 
