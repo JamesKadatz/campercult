@@ -58,10 +58,16 @@ box-shadow: 0px 1px 2px #ecf7c5;*/
 	
 }
 
-.header-text h6{
+.header-text2{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #fff;
+	font-size: 3rem;
+line-height: 4.688rem;
+	text-align: center;
+	text-transform: uppercase; 
+	margin: 0 0 24px;  
 	padding:0;
-	font-size: 30px; 
-font-weight: 300;  margin: 0 0 24px; text-align: center; text-transform: uppercase; color: #fff;
 }
 
 
@@ -81,6 +87,7 @@ font-weight: 300;  margin: 0 0 24px; text-align: center; text-transform: upperca
 	margin-right: auto;
 padding-top: 90px;	
 margin-bottom:0;
+
 }
 
 .logo-smart{
@@ -187,11 +194,11 @@ ul li {
 
 /*------------Main, Section----------------------------------------------------------------*/
 .section1{
-	background: #f0f3f4;
-	margin-bottom: 40px;
+	background: #fff;
+	margin-bottom: 10px;
 }
 .row-title{
-	padding: 80px 0px 60px 0px; /*top right bottom left*/
+	padding: 80px 0px 0px 0px; /*top right bottom left*/
 	margin: 30px 0px 0px 0px;   /*top right bottom left*/
 }
 
@@ -232,6 +239,26 @@ letter-spacing: 2px;
    
 }
 
+.title3 {
+	
+	color: #bfbfbf;
+	font-size: 26px;
+	font-weight: 500;
+	letter-spacing: 2px;
+    position: relative;
+    /*margin: 0 auto 1em;*/
+    padding: 1em 1em 0em 1em;
+    text-align: center;
+	text-transform: uppercase;
+	opacity: 0.7;
+    
+	
+}
+
+.title3 p{
+	color: #595959;
+}
+
 .title {
 	
 	color: #3c4a54;
@@ -239,7 +266,7 @@ letter-spacing: 2px;
 	font-weight: 500;
 	letter-spacing: 2px;
     position: relative;
-    margin: 0 auto 1em;
+    /*margin: 0 auto 1em;*/
     padding: 3em 1em 0em 1em;
     text-align: center;
     text-transform: uppercase;
@@ -261,7 +288,7 @@ letter-spacing: 2px;
   z-index: 1;
   margin: 0 auto;
   position: absolute;
-  border-top: 2px solid #848484;
+  border-top: 2px solid #a6a6a6;
   top: 20px;
   left: 0;
   right: 0;
@@ -349,9 +376,9 @@ padding-bottom: 40px;
 }
 .section-camper-text{
 	
-color: #3e3e3e;
-font-size: 16px;
-line-height: 2em;
+color: #4d4d4d;
+font-size: 17px;
+line-height: 1.9em;
 font-weight: 300;
 padding: 0px 40px 20px 40px; /*top right bottom left*/
 text-align: left;
@@ -363,22 +390,47 @@ text-align: left;
 	
 max-width: 80%; 
 	height: auto; 
-	display: block; 
-padding: 0px 50px 20px 50px; /*top right bottom left*/
-text-align: center;
+	 
+margin: 0px 10px 20px 10px; /*top right bottom left*/
+padding: 0 0 0 0;
+
+
 
 
 }
 
+.description{
+	position:absolute; /* absolute position (so we can position it where we want)*/
+	bottom:0px; /* position will be on bottom */
+	left:0px;
+	width:100%;
+	/* styling bellow */
+	background-color:#1a1a1a;
+	color:white;
+	opacity:0.9; /* transparency */
+	filter:alpha(opacity=60); /* IE transparency */
+	text-align: center;
+	
+	
+}
+p.description_content{
+	padding:10px;
+	margin:0px;
+	font-size: 18px;
+line-height: 2em;
+font-weight: 400;
+}
+
 .bla{
-	padding: 0 80px 0 80px;
+	padding: 0px 40px 0px 40px;
+	text-align: center ;
 }
 
 .section-text4{
 
-color: #3e3e3e;
+color: #4d4d4d;
 font-size: 17px;
-line-height: 2em;
+line-height: 1.9em;
 font-weight: 300;
 	border: 0; 
 	padding-top: 0px; 
@@ -390,15 +442,51 @@ font-weight: 300;
 .section-text6{
 
 	color: #3e3e3e;
-	font-size: 16px;
-	line-height: 2em;
+	font-size: 14px;
+	line-height: 1.8em;
 	font-weight: 300;
 	border: 0; 
 	padding-top: 0px; 
-	text-align: center;
+	text-align: left;
 	margin-bottom: 40px;
-	background: #f0f3f4;
+	background: #fff;
 	
+}
+
+.section-text6 li{
+		color: #3e3e3e;
+	font-size: 15px;
+	line-height: 1.8em;
+	font-weight: 300;
+	border:0;
+	padding: 0 0 5px 0;
+}
+
+.section-text6 li i{
+	color: #8c8c8c;
+	font-weight: lighter;
+	font-size: 12px;
+	margin-right: 10px;
+}
+
+.section-text4 ul{
+	padding: 0 0 20px 0;
+}
+
+.section-text4 li{
+		color: #3e3e3e;
+	font-size: 22px;
+	line-height: 2em;
+	font-weight: 400;
+	border:0;
+	padding: 0 0 5px 0;
+}
+
+.section-text4 li i{
+	color: #3e3e3e;
+	font-weight: 400;
+	font-size: 20px;
+	margin-right: 10px;
 }
 
 
