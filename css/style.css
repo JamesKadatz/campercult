@@ -196,6 +196,7 @@ ul li {
 .section1{
 	background: #fff;
 	margin-bottom: 10px;
+	margin-top: 20px;
 }
 .row-title{
 	padding: 80px 0px 0px 0px; /*top right bottom left*/
@@ -241,7 +242,7 @@ letter-spacing: 2px;
 
 .title3 {
 	
-	color: #bfbfbf;
+	color: #5f7686;
 	font-size: 26px;
 	font-weight: 500;
 	letter-spacing: 2px;
@@ -251,8 +252,13 @@ letter-spacing: 2px;
     text-align: center;
 	text-transform: uppercase;
 	opacity: 0.7;
+	margin-bottom: 60px;
     
 	
+}
+
+.ausstattung{
+	margin-top: 30px;
 }
 
 .title3 p{
@@ -391,8 +397,8 @@ text-align: left;
 max-width: 80%; 
 	height: auto; 
 	 
-margin: 0px 10px 20px 10px; /*top right bottom left*/
-padding: 0 0 0 0;
+margin: 0px 0px 20px 0px; /*top right bottom left*/
+padding: 0 10px 0 10px;
 
 
 
@@ -403,13 +409,14 @@ padding: 0 0 0 0;
 	position:absolute; /* absolute position (so we can position it where we want)*/
 	bottom:0px; /* position will be on bottom */
 	left:0px;
-	width:100%;
+	width:96.2%;
 	/* styling bellow */
 	background-color:#1a1a1a;
 	color:white;
 	opacity:0.9; /* transparency */
 	filter:alpha(opacity=60); /* IE transparency */
 	text-align: center;
+	margin: 0 10px 0 10px;
 	
 	
 }
@@ -460,13 +467,23 @@ font-weight: 300;
 	font-weight: 300;
 	border:0;
 	padding: 0 0 5px 0;
+	background: #fff;
 }
 
 .section-text6 li i{
-	color: #8c8c8c;
+	color: #bfbfbf;
 	font-weight: lighter;
-	font-size: 12px;
+	font-size: 10px;
 	margin-right: 10px;
+}
+
+.section-text6 p{
+			color: #fff;
+	font-size: 15px;
+	line-height: 1.8em;
+	font-weight: 300;
+	border:0;
+	padding: 0 0 5px 0;
 }
 
 .section-text4 ul{
@@ -479,15 +496,23 @@ font-weight: 300;
 	line-height: 2em;
 	font-weight: 400;
 	border:0;
-	padding: 0 0 5px 0;
+	padding: 0 0 0px 0;
 }
 
 .section-text4 li i{
 	color: #3e3e3e;
 	font-weight: 400;
-	font-size: 20px;
+	font-size: 22px;
+	line-height: 2em;
 	margin-right: 10px;
+	
 }
+
+.section-text4 li a{
+	color: #3e3e3e;
+	
+}
+
 
 
 #section-kontakt{
@@ -754,3 +779,7 @@ figure.snip1169.hover i {
   color: #fff;
 }
 
+.form-control{
+	height: 50px;
+	font-size: 17px;
+}
